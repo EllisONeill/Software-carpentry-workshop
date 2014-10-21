@@ -20,7 +20,7 @@ done
 
 echo ~
 echo ~
-echo Available files:
+echo Available .csv files:
 ls *.csv
 echo ~
 echo ~
