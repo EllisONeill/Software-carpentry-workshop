@@ -24,3 +24,12 @@ echo Available .csv files:
 ls *.csv
 echo ~
 echo ~
+
+for f in *data.csv
+do
+~/anaconda/bin/ipython analyze_mosquito_data_script.py $f
+done
+
+mv *png figures/
+mv *parameters.csv parameters/
+ 

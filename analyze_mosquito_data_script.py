@@ -13,7 +13,7 @@ print "~"
 
 data=pd.read_csv(filename)
 data["temperature"]=mosquito_lib.fahr_to_celsius(data["temperature"])
-parameters=mosquito_lib.analyze(data,filename.replace("csv","png"))
+parameters=mosquito_lib.analyze(data,filename.replace("data.csv",".png"))
 
 parameters.to_csv(filename.replace("data", "parameters"))
 
